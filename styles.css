@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1,6;
+  min-height: 100vh;
+  margin: 0;
+  padding: 50px 150px;
+  background-color: var(--main);
+  box-sizing: border-box;
+  color: var(--letters);
+  background: url('assets/image/NBX_CLASSICS_SPLASH.jpg');
+
+}
+:root {
+  --main: #cecece;
+  --letters: #000000;
+  --secondary: #ffffff;
+}
+
+.container {
+  background-color: var(--secondary);
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 15px;
+  border-top: 15px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cacaca;
+  outline: none;
+}
+.btn {
+  padding: 10px 30px;
+  color: var(--letters);
+  background-color: #6d5900c5;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: #fc8f00;
+  
+}
+
+.recipe-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+;
+  
+}
+.recipe-card {
+  border: 1px solid var(--main);
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+  border: none;
+}
+
+.recipe-card a{
+ transition: 0.5s ease;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.recipe-details {
+  margin-top: 20px;
+flex-direction: column;
+}
+
+.recipe-details img{
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
